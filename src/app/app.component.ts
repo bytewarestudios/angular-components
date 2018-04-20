@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CustomTooltipComponent } from "./directives/tooltip-custom.component";
+import { CustomTooltipComponent } from './shared/components/tooltip/tooltip-custom.component';
+import { AppModule } from './app.module';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { CustomTooltipComponent } from "./directives/tooltip-custom.component";
 })
 export class AppComponent implements OnInit{
   public testComponent;
-  title = 'app';
+  title = 'Angular Components';
 
   ngOnInit() {
     this.testComponent = CustomTooltipComponent;
