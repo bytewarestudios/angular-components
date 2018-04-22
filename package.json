@@ -5,6 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "webpack-dev-server --port=4200",
+    "mock-server": "node ./test/mocks/api/bin/www",
     "build": "webpack",
     "test": "karma start ./karma.conf.js",
     "lint": "ng lint",
@@ -22,7 +23,10 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@ngrx/store": "^5.2.0",
     "core-js": "^2.4.1",
+    "express": "^4.16.3",
+    "express-generator": "^4.16.0",
     "rxjs": "^5.5.6",
     "tippy.js": "^2.2.3",
     "zone.js": "^0.8.19"
